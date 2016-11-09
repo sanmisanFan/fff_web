@@ -16,8 +16,8 @@ Route::get('/', function () {
 });
 
 //Route::get('/dbtest', 'IndexController@index');
-//Route::get('admin/login', 'Admin\LoginController@login');
+Route::get('admin/login', 'Admin\LoginController@login');
 
-Route::auth();
+//Route::auth();
 
 Route::get('/home', 'HomeController@index');
