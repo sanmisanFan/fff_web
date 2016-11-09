@@ -10,6 +10,6 @@ class LoginController extends CommonController{
     //test
     public function login(){
         //echo "hahahah";
-        return view('admin.login');
+        return view('backend.app.login');
     }
 }
