@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Route::get('/dbtest', 'IndexController@index');
+//Route::get('admin/login', 'Admin\LoginController@login');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
