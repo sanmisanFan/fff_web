@@ -19,8 +19,8 @@ var gulp = require('gulp');
  */
 gulp.task("copyfiles", function() {
 
-    gulp.src("resources/assets/bower_components／**")
-        .pipe(gulp.dest("public/assets/vendor/"));
+    gulp.src("resources/assets/bower_components/*")
+        .pipe(gulp.dest("public/assets/vendor"));
 });
 
 
