@@ -19,8 +19,9 @@ var gulp = require('gulp');
  */
 gulp.task("copyfiles", function() {
 
-    gulp.src("resources/assets/bower_components/*")
-        .pipe(gulp.dest("public/assets/vendor"));
+    //后端组件资源根据需要copy到public目录
+    gulp.src("resources/assets/bower_components/**")
+        .pipe(gulp.dest("public/admin/assets/vendor"));
 });
 
 
@@ -35,7 +36,8 @@ elixir(function(mix) {
     //    'resources/assets'
     //);
     
-    mix.copy('resources/assets/backend', 'public/assets/backend');
+    //后端资源复制到public的admin路径
+    mix.copy('resources/assets/backend', 'public/admin/assets/backend');
 
     //mix.sass('app.scss');
 });

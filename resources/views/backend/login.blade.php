@@ -6,16 +6,16 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
    <meta name="description" content="Bootstrap Admin App + jQuery">
    <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
-   <title>Angle - Bootstrap Admin Template</title>
+   <title>FoodForFun backend</title>
    <!-- =============== VENDOR STYLES ===============-->
    <!-- FONT AWESOME-->
-   <link rel="stylesheet" href="../vendor/fontawesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="assets/vendor/fontawesome/css/font-awesome.min.css">
    <!-- SIMPLE LINE ICONS-->
-   <link rel="stylesheet" href="../vendor/simple-line-icons/css/simple-line-icons.css">
+   <link rel="stylesheet" href="assets/vendor/simple-line-icons/css/simple-line-icons.css">
    <!-- =============== BOOTSTRAP STYLES ===============-->
-   <link rel="stylesheet" href="css/bootstrap.css" id="bscss">
+   <link rel="stylesheet" href="assets/backend/css/bootstrap.css" id="bscss">
    <!-- =============== APP STYLES ===============-->
-   <link rel="stylesheet" href="css/app.css" id="maincss">
+   <link rel="stylesheet" href="assets/backend/css/app.css" id="maincss">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
          <div class="panel panel-dark panel-flat">
             <div class="panel-heading text-center">
                <a href="#">
-                  <img src="img/logo.png" alt="Image" class="block-center img-rounded">
+                  <img src="assets/backend/img/logo.png" alt="Image" class="block-center img-rounded">
                </a>
             </div>
             <div class="panel-body">
@@ -66,17 +66,17 @@
    </div>
    <!-- =============== VENDOR SCRIPTS ===============-->
    <!-- MODERNIZR-->
-   <script src="../vendor/modernizr/modernizr.js"></script>
+   <script src="assets/vendor/modernizr/modernizr.js"></script>
    <!-- JQUERY-->
-   <script src="../vendor/jquery/dist/jquery.js"></script>
+   <script src="assets/vendor/jquery/dist/jquery.js"></script>
    <!-- BOOTSTRAP-->
-   <script src="../vendor/bootstrap/dist/js/bootstrap.js"></script>
+   <script src="assets/vendor/bootstrap/dist/js/bootstrap.js"></script>
    <!-- STORAGE API-->
-   <script src="../vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
+   <script src="assets/vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
    <!-- PARSLEY-->
-   <script src="../vendor/parsleyjs/dist/parsley.min.js"></script>
+   <script src="assets/vendor/parsleyjs/dist/parsley.min.js"></script>
    <!-- =============== APP SCRIPTS ===============-->
-   <script src="js/app.js"></script>
+   <script src="assets/backend/js/app.js"></script>
 </body>
 
 </html>
