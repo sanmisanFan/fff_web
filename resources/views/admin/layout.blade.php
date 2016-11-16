@@ -16,6 +16,10 @@
         <!-- WHIRL (spinners)-->
         <link rel="stylesheet" href="/admin/assets/vendor/whirl/dist/whirl.css">
         <!-- =============== PAGE VENDOR STYLES ===============-->
+        <!-- DATATABLES-->
+        <link rel="stylesheet" href="/admin/assets/vendor/datatables-colvis/css/dataTables.colVis.css">
+        <link rel="stylesheet" href="/admin/assets/backend/vendor/datatable-bootstrap/css/dataTables.bootstrap.css">
+
         <!-- =============== BOOTSTRAP STYLES ===============-->
         <link rel="stylesheet" href="/admin/assets/backend/css/bootstrap.css" id="bscss">
         <!-- =============== APP STYLES ===============-->
@@ -110,6 +114,11 @@
    <script src="/admin/assets/vendor/parsleyjs/dist/parsley.min.js"></script>
    <script type="text/javascript" src="/admin/assets/vendor/parsleyjs/src/i18n/zh_cn.js"></script>
    <!-- =============== PAGE VENDOR SCRIPTS ===============-->
+    <!-- DATATABLES-->
+   <script src="/admin/assets/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+   <script src="/admin/assets/vendor/datatables-colvis/js/dataTables.colVis.js"></script>
+   <script src="/admin/assets/backend/vendor/datatable-bootstrap/js/dataTables.bootstrap.js"></script>
+   <script src="/admin/assets/backend/vendor/datatable-bootstrap/js/dataTables.bootstrapPagination.js"></script>
    <!-- =============== APP SCRIPTS ===============-->
    <script src="/admin/assets/backend/js/app.js"></script>
 
