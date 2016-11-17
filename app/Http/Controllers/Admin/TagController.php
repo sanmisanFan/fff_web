@@ -78,7 +78,7 @@ class TagController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing a tag.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -86,6 +86,14 @@ class TagController extends Controller
     public function edit($id)
     {
         //
+        $tag = Tag::findOrFail($id);
+        $data = ['id' => $id];
+        foreach ($array_keys($this->fields) as $field) {
+            # code...
+            $data[$field] = old($field, $tag->$field);
+        }
+
+        return view('admin.tag.edit', $data);
     }
 
     /**
