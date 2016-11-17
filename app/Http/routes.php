@@ -22,7 +22,7 @@ Route::get('article', 'ArticleController@index');
 Route::get('article/{slug}', 'ArticleController@showPost');
 
 //Admin section
-Route::get('admin', function() {
+Route::get('/admin', function() {
     //
     return redirect('/admin/post');
 });
@@ -37,7 +37,7 @@ Route::group(['namespace' => 'Admin', 'middleware' => 'auth'], function() {
 //Logging in and out
 Route::get('/auth/login', 'Auth\AuthController@getLogin');
 Route::post('/auth/login', 'Auth\AuthController@postLogin');
-Route::get('/auth/logout', 'Auth\AuthController@getLogout');
+Route::get('/auth/logout', 'Auth\AuthController@logout');
 
 
 

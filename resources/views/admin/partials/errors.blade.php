@@ -1,7 +1,7 @@
 @if (count($errors) > 0)
     <div class="alert alert-danger">
         <strong>Whoops!</strong>
-        There were some problems with your input.<br><br>
+        哦呼，上传的时候出现了一些问题(´・ω・`)<br><br>
         <ul>
         @foreach ($errors->all() as $error)
             <li>{{ $error }}</li>
