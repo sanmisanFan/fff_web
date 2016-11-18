@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Tag;
 use App\Http\Requests\TagCreateRequest;
+use App\Http\Requests\TagUpdateRequest;
 
 class TagController extends Controller
 {
@@ -88,7 +89,7 @@ class TagController extends Controller
         //
         $tag = Tag::findOrFail($id);
         $data = ['id' => $id];
-        foreach ($array_keys($this->fields) as $field) {
+        foreach (array_keys($this->fields) as $field) {
             # code...
             $data[$field] = old($field, $tag->$field);
         }
@@ -97,25 +98,38 @@ class TagController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the tag in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  TagUpdateRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(TagUpdateRequest $request, $id)
     {
         //
+        $tag = Tag::findOrFail($id);
+
+        foreach (array_keys(array_except($this->fields, ['tag'])) as $field) {
+            $tag->$field = $request->get($field);
+        }
+
+        $tag->save();
+
+        return redirect('/admin/tag')->withSuccess("The tag '$tag->tag' was updated!");
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the tag from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        //
+        $tag = Tag::findOrFail($id);
+        $tag->delete();
+
+        return redirect('/admin/tag')
+                    ->withSuccess("The '$tag->tag' tag has been deleted.");
     }
 }
