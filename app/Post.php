@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Pinyin;
 
 class Post extends Model
 {
@@ -32,9 +33,10 @@ class Post extends Model
     public function setTitleAttribute($value){
 
         $this -> attributes['title'] = $value;
-
+        echo Pinyin::getPinyin("早上好");
         if(! $this -> exists){
-            $this->setUniqueSlug($value, '');
+            $translatedValue = Pinyin::getPinyin($value);
+            $this->setUniqueSlug($translatedValue, '');
         }
     }
 
