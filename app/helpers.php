@@ -18,3 +18,28 @@ function is_image($mimeType){
 
     return starts_with($mimeType, 'image/');
 }
+
+/**
+ * Return "checked" if true
+ * 用于在views的复选或者单选框设置checked属性
+ */
+function checked($value){
+
+    return $value ? 'checked' : '';
+}
+
+/**
+ * Return img url for headers
+ * 返回上传图片的完整路径
+ */
+function page_image($value = null){
+
+    if (empty($value)) {
+        $value = config('website.page_image');
+    }
+    if (! starts_with($value, 'http') && $value[0] !== '/') {
+        $value = config('website.uploads.webpath') . '/' . $value;
+    }
+
+    return $value;
+}
