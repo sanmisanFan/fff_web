@@ -5,19 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {{-- 设置站点标题 --}}
-        <title>{{ config('website.title') }} FoodForFun - Admin</title> 
+        <title>{{ config('website.title') }} - Admin</title> 
         <!-- =============== VENDOR STYLES ===============-->
         <!-- FONT AWESOME-->
-        <link rel="stylesheet" href="/admin/assets/vendor/fontawesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/vendor/fontawesome/css/font-awesome.min.css">
         <!-- SIMPLE LINE ICONS-->
-        <link rel="stylesheet" href="/admin/assets/vendor/simple-line-icons/css/simple-line-icons.css">
+        <link rel="stylesheet" href="/assets/vendor/simple-line-icons/css/simple-line-icons.css">
         <!-- ANIMATE.CSS-->
-        <link rel="stylesheet" href="/admin/assets/vendor/animate.css/animate.min.css">
+        <link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css">
         <!-- WHIRL (spinners)-->
-        <link rel="stylesheet" href="/admin/assets/vendor/whirl/dist/whirl.css">
+        <link rel="stylesheet" href="/assets/vendor/whirl/dist/whirl.css">
         <!-- =============== PAGE VENDOR STYLES ===============-->
         <!-- DATATABLES-->
-        <link rel="stylesheet" href="/admin/assets/vendor/datatables-colvis/css/dataTables.colVis.css">
+        <link rel="stylesheet" href="/assets/vendor/datatables-colvis/css/dataTables.colVis.css">
         <link rel="stylesheet" href="/admin/assets/backend/vendor/datatable-bootstrap/css/dataTables.bootstrap.css">
 
         <!-- =============== BOOTSTRAP STYLES ===============-->
@@ -99,24 +99,24 @@
    </div>
    <!-- =============== VENDOR SCRIPTS ===============-->
    <!-- MODERNIZR-->
-   <script src="/admin/assets/vendor/modernizr/modernizr.js"></script>
+   <script src="/assets/vendor/modernizr/modernizr.js"></script>
    <!-- JQUERY-->
-   <script src="/admin/assets/vendor/jquery/dist/jquery.js"></script>
+   <script src="/assets/vendor/jquery/dist/jquery.js"></script>
    <!-- BOOTSTRAP-->
-   <script src="/admin/assets/vendor/bootstrap/dist/js/bootstrap.js"></script>
+   <script src="/assets/vendor/bootstrap/dist/js/bootstrap.js"></script>
    <!-- STORAGE API-->
-   <script src="/admin/assets/vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
+   <script src="/assets/vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
    <!-- JQUERY EASING-->
-   <script src="/admin/assets/vendor/jquery.easing/js/jquery.easing.js"></script>
+   <script src="/assets/vendor/jquery.easing/js/jquery.easing.js"></script>
    <!-- ANIMO-->
-   <script src="/admin/assets/vendor/animo.js/animo.js"></script>
+   <script src="/assets/vendor/animo.js/animo.js"></script>
    <!-- PARSLEY表单验证-->
-   <script src="/admin/assets/vendor/parsleyjs/dist/parsley.min.js"></script>
-   <script type="text/javascript" src="/admin/assets/vendor/parsleyjs/src/i18n/zh_cn.js"></script>
+   <script src="/assets/vendor/parsleyjs/dist/parsley.min.js"></script>
+   <script type="text/javascript" src="/assets/vendor/parsleyjs/src/i18n/zh_cn.js"></script>
    <!-- =============== PAGE VENDOR SCRIPTS ===============-->
     <!-- DATATABLES-->
-   <script src="/admin/assets/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
-   <script src="/admin/assets/vendor/datatables-colvis/js/dataTables.colVis.js"></script>
+   <script src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+   <script src="/assets/vendor/datatables-colvis/js/dataTables.colVis.js"></script>
    <script src="/admin/assets/backend/vendor/datatable-bootstrap/js/dataTables.bootstrap.js"></script>
    <script src="/admin/assets/backend/vendor/datatable-bootstrap/js/dataTables.bootstrapPagination.js"></script>
    <!-- =============== APP SCRIPTS ===============-->
