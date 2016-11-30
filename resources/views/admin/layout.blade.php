@@ -5,7 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {{-- 设置站点标题 --}}
-        <title>{{ config('website.title') }} - Admin</title> 
+        <title>{{ config('website.title') }} - Admin</title>
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="/bitbug_favicon.ico"> 
         <!-- =============== VENDOR STYLES ===============-->
         <!-- FONT AWESOME-->
         <link rel="stylesheet" href="/assets/vendor/fontawesome/css/font-awesome.min.css">
