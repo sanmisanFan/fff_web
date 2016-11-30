@@ -21,7 +21,11 @@ gulp.task("copyfiles", function() {
 
     //后端组件资源根据需要copy到public目录
     gulp.src("resources/assets/bower_components/**")
-        .pipe(gulp.dest("public/admin/assets/vendor"));
+        .pipe(gulp.dest("public/assets/vendor"));
+
+    // Copy clean-blog less files
+    gulp.src("resources/assets/bower_components/clean-blog/less/**")
+        .pipe(gulp.dest("resources/assets/less/clean-blog"));
 });
 
 

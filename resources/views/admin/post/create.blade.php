@@ -2,13 +2,13 @@
 
 @section('styles')
     <!-- CHOSEN-->
-    <link rel="stylesheet" href="/admin/assets/vendor/chosen_v1.2.0/chosen.min.css">
+    <link rel="stylesheet" href="/assets/vendor/chosen_v1.2.0/chosen.min.css">
     <!-- pickadate-->
-    <link href="/admin/assets/vendor/pickadate/lib/themes/default.css" rel="stylesheet">
-    <link href="/admin/assets/vendor/pickadate/lib/themes/default.date.css" rel="stylesheet">
-    <link href="/admin/assets/vendor/pickadate/lib/themes/default.time.css" rel="stylesheet">
+    <link href="/assets/vendor/pickadate/lib/themes/default.css" rel="stylesheet">
+    <link href="/assets/vendor/pickadate/lib/themes/default.date.css" rel="stylesheet">
+    <link href="/assets/vendor/pickadate/lib/themes/default.time.css" rel="stylesheet">
     <!--引入wangEditor.css-->
-    <link rel="stylesheet" type="text/css" href="/admin/assets/vendor/wangEditor/dist/css/wangEditor.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/wangEditor/dist/css/wangEditor.min.css">
 @stop
 
 @section('content')
@@ -48,13 +48,13 @@
 
 @section('scripts')
     <!-- CHOSEN-->
-    <script src="/admin/assets/vendor/chosen_v1.2.0/chosen.jquery.min.js"></script>
+    <script src="/assets/vendor/chosen_v1.2.0/chosen.jquery.min.js"></script>
     <!-- Pickadate-->
-    <script src="/admin/assets/vendor/pickadate/lib/picker.js"></script>
-    <script src="/admin/assets/vendor/pickadate/lib/picker.date.js"></script>
-    <script src="/admin/assets/vendor/pickadate/lib/picker.time.js"></script>
+    <script src="/assets/vendor/pickadate/lib/picker.js"></script>
+    <script src="/assets/vendor/pickadate/lib/picker.date.js"></script>
+    <script src="/assets/vendor/pickadate/lib/picker.time.js"></script>
     <!-- wangEditor-->
-    <script type="text/javascript" src="/admin/assets/vendor/wangEditor/dist/js/wangEditor.min.js"></script>
+    <script type="text/javascript" src="/assets/vendor/wangEditor/dist/js/wangEditor.min.js"></script>
     
    <!-- Demo-->
    <script>
