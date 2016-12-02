@@ -2,24 +2,40 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\ArticleIndexData;
 use Illuminate\Http\Request;
 use App\Post;
+use App\Tag;
 use Carbon\Carbon;
 use App\Http\Requests;
 
+/**
+ * index() 中先从请求中获取 $tag 值（没有的话为 null )
+ * 然后调用刚刚创建的 BlogIndexData 任务来获取文章数据。
+ */
 class ArticleController extends Controller
 {
     //
-    public function index(){
-        $posts = Post::where('published_at', '<=', Carbon::now())
-                 -> orderBy('published_at', 'desc')
-                 -> paginate(config('website.posts_per_page')); 
+    public function index(Request $request){
 
-        return  view('articles.index', compact('posts'));
+        $tag = $request->get('tag');
+        $data = $this->dispatch(new BlogIndexData($tag));
+        $layout = $tag ? Tag::layout($tag) : 'articles.layouts.index';
+
+        return view($layout, $data);
     }
 
-    public function showPost($slug){
-        $post = Post::whereSlug($slug) -> firstOrFail();
-        return  view('articles.post') -> withPost($post);
+    /**
+     * 用于显示文章详情，这里我们使用了渴求式加载获取指定文章标签信息
+     */
+    public function showPost($slug, Request $request){
+
+        $post = Post::with('tags')->whereSlug($slug)->firstOrFail();
+        $tag = $request->get('tag');
+        if ($tag) {
+            $tag = Tag::whereTag($tag)->firstOrFail();
+        }
+
+        return view($post->layout, compact('post', 'tag'));
     }
 }
