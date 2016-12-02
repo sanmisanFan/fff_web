@@ -14,7 +14,10 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
         Model::unguard();
-        $this -> call('PostTableSeeder');
+        $this->call('TagTableSeeder');
+        $this->call('PostTableSeeder');
+        Model::reguard();
+
     }
 }
 
@@ -22,10 +25,10 @@ class DatabaseSeeder extends Seeder
 * 随机生成10篇post
 * 
 */
-class PostTableSeeder extends Seeder{
+/* class PostTableSeeder extends Seeder{
     public function run(){
         App\Post::truncate();
         factory(App\Post::class, 10)->create();
 
     }
-}
+} */

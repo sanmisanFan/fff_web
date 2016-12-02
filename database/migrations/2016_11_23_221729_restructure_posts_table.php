@@ -27,7 +27,7 @@ class RestructurePostsTable extends Migration
             $table->string('page_image')->after('content_html'); 
             $table->string('meta_description')->after('page_image'); 
             $table->boolean('is_draft')->after('meta_description'); 
-            $table->string('layout')->after('is_draft')->default('articles.layouts.post'); 
+            $table->string('layout')->after('is_draft')->default('mainsite.layouts.post'); 
         });
     }
 

@@ -24,8 +24,30 @@ gulp.task("copyfiles", function() {
         .pipe(gulp.dest("public/assets/vendor"));
 
     // Copy clean-blog less files
-    gulp.src("resources/assets/bower_components/clean-blog/less/**")
-        .pipe(gulp.dest("resources/assets/less/clean-blog"));
+   /* gulp.src("resources/assets/bower_components/clean-blog/less/**")
+        .pipe(gulp.dest("resources/assets/less/clean-blog")); */
+
+    //Copy jQuery 
+    gulp.src("resources/assets/bower_components/jquery/dist/jquery.js")
+        .pipe(gulp.dest("resources/assets/js/"));
+
+    //Copy Bootstrap
+    gulp.src("resources/assets/bower_components/bootstrap/dist/js/bootstrap.js")
+        .pipe(gulp.dest("resources/assets/js/"));
+
+    gulp.src("resources/assets/bower_components/bootstrap/less/**")
+        .pipe(gulp.dest("resources/assets/less/bootstrap"));
+
+    gulp.src("resources/assets/bower_components/bootstrap/dist/fonts/**")
+        .pipe(gulp.dest("public/assets/fonts"));
+
+    //Copy Fontawesome
+    gulp.src("resources/assets/bower_components/fontawesome/less/**")
+        .pipe(gulp.dest("resources/assets/less/fontawesome"));
+
+    gulp.src("resources/assets/bower_components/fontawesome/fonts/**")
+        .pipe(gulp.dest("public/assets/fonts"));
+
 });
 
 
@@ -35,13 +57,19 @@ gulp.task("copyfiles", function() {
 elixir(function(mix) {
 
     // 合并 scripts
-    //mix.scripts(['js/jquery.js','js/bootstrap.js'],
-    //    'public/assets/js/admin.js',
-    //    'resources/assets'
-    //);
+    mix.scripts([
+        'js/jquery.js',
+        'js/bootstrap.js',
+        'js/mainsite.js'
+        ],
+        'public/assets/js/mainsite.js','resources//assets'
+    );
     
     //后端资源复制到public的admin路径
     mix.copy('resources/assets/backend', 'public/admin/assets/backend');
+
+    // Compile CSS
+    mix.less('mainsite.less', 'public/assets/css/mainsite.css');
 
     //mix.sass('app.scss');
 });

@@ -13,10 +13,21 @@
     -o-background-size: cover;
 }
 
+@fontPath_Lobster: '/assets/fonts/Lobster';
+@fontPath_Lora: '/assets/fonts/Lora';
+@fontPath_OpenSans: '/assets/fonts/Open_Sans';
+
 .serif() {
-	font-family: 'Lora', 'Times New Roman', serif;
+	font-family: 'Lora', 'Times New Roman', serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑", SimSun, "宋体";
+    src:url('@{fontPath_Lora}/Lora-Regular.ttf');
 }
 
 .sans-serif () {
-	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
+    src:url('@{fontPath_OpenSans}/OpenSans-Regular.ttf');
+}
+
+.lobster(){
+    font-family: 'Lobster', cursive;
+    src:url('@{fontPath_Lobster}/Lobster-Regular.ttf');
 }
