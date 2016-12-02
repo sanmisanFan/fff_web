@@ -11,7 +11,7 @@ use App\Http\Requests;
 
 /**
  * index() 中先从请求中获取 $tag 值（没有的话为 null )
- * 然后调用刚刚创建的 BlogIndexData 任务来获取文章数据。
+ * 然后调用刚刚创建的 ArticleIndexData 任务来获取文章数据。
  */
 class ArticleController extends Controller
 {
@@ -19,8 +19,8 @@ class ArticleController extends Controller
     public function index(Request $request){
 
         $tag = $request->get('tag');
-        $data = $this->dispatch(new BlogIndexData($tag));
-        $layout = $tag ? Tag::layout($tag) : 'articles.layouts.index';
+        $data = $this->dispatch(new ArticleIndexData($tag));
+        $layout = $tag ? Tag::layout($tag) : 'mainsite.layouts.index';
 
         return view($layout, $data);
     }

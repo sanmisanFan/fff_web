@@ -43,11 +43,3 @@ Route::get('/auth/login', 'Auth\AuthController@getLogin');
 Route::post('/auth/login', 'Auth\AuthController@postLogin');
 Route::get('/auth/logout', 'Auth\AuthController@logout');
 
-
-
-//Route::get('/dbtest', 'IndexController@index');
-//Route::get('admin/login', 'Admin\LoginController@login');
-
-//Route::auth();
-
-//Route::get('/home', 'HomeController@index');
