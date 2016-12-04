@@ -59,14 +59,25 @@ hr.small {
 // Navigation
 
 .navbar-custom {
+	border-top: 2px solid @hentai-pink;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 3;
+	background: #f8f8f8 url(/assets/img/pattern.jpg);
 	.sans-serif;
 	.navbar-brand {
-		font-weight: 900;
+		font-weight: 400;
+		//.lobster;
+		font-family: 'Lobster', cursive;
+    	font-size: 38px;
+	}
+	.navbar-brand span {
+		font-size: 40px;
+		font-weight: 700;
+    	color: @hentai-pink;
+    	font-family: 'Lato';
 	}
 	.nav {
 		li {
@@ -79,8 +90,7 @@ hr.small {
 		}
 	}
 	@media only screen and (min-width: 768px) {
-		background: #f8f8f8;
-		//border-top: 2px solid @hentai-pink;
+		
 		border-bottom: 1px solid transparent;
 		.navbar-brand {
 			color: @logo-color;
@@ -104,6 +114,7 @@ hr.small {
 		}
 	}
 	@media only screen and (min-width: 1170px) {
+		
 		-webkit-transition: background-color 0.3s;
 		-moz-transition: background-color 0.3s;
 		transition: background-color 0.3s;
@@ -118,7 +129,8 @@ hr.small {
 		&.is-fixed {
 			/* when the user scrolls down, we hide the header right above the viewport */
 			position: fixed;
-			top: -61px;
+			top: -63px;
+			background: #f8f8f8;
 			background-color: fade(white, 90%);
 			border-bottom: 1px solid darken(white, 5%);
 			-webkit-transition: -webkit-transform 0.3s;
@@ -144,6 +156,7 @@ hr.small {
 			}
 		}
 		&.is-visible {
+
 			/* if the user changes the scrolling direction, we show the header */
 			-webkit-transform: translate3d(0, 100%, 0);
 			-moz-transform: translate3d(0, 100%, 0);
