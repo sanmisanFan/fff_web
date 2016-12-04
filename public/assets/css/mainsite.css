@@ -8237,6 +8237,18 @@ button.close {
 .fa-medium:before {
   content: "\f23a";
 }
+/*.lobster(){
+    font-family: 'Lobster', cursive;
+    src:url('@{fontPath_Lobster}/latin.woff2');
+}
+*/
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), local('Lobster-Regular'), url('/assets/fonts/Lobster/latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 body {
   font-family: 'Lora', 'Times New Roman', serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑", SimSun, "宋体";
   src: url('/assets/fonts/Lora/Lora-Regular.ttf');
@@ -8256,8 +8268,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
-  src: url('/assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
+  src: url('/assets/fonts/Lato/Lato-Regular.ttf'), url('/assets/fonts/Lato/Lato-Bold.ttf'), url('/assets/fonts/Lato/Lato-Black.ttf'), url('/assets/fonts/Lato/Lato-Light.ttf');
   font-weight: 800;
 }
 a {
@@ -8282,16 +8294,26 @@ hr.small {
   border-color: white;
 }
 .navbar-custom {
+  border-top: 2px solid #e75967;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 3;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
-  src: url('/assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+  background: #f8f8f8 url(/assets/img/pattern.jpg);
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
+  src: url('/assets/fonts/Lato/Lato-Regular.ttf'), url('/assets/fonts/Lato/Lato-Bold.ttf'), url('/assets/fonts/Lato/Lato-Black.ttf'), url('/assets/fonts/Lato/Lato-Light.ttf');
 }
 .navbar-custom .navbar-brand {
-  font-weight: 900;
+  font-weight: 400;
+  font-family: 'Lobster', cursive;
+  font-size: 38px;
+}
+.navbar-custom .navbar-brand span {
+  font-size: 40px;
+  font-weight: 700;
+  color: #e75967;
+  font-family: 'Lato';
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
@@ -8301,7 +8323,6 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: #f8f8f8;
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
@@ -8331,7 +8352,8 @@ hr.small {
   .navbar-custom.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -61px;
+    top: -63px;
+    background: #f8f8f8;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #f2f2f2;
     transition: transform 0.3s;
@@ -8390,8 +8412,8 @@ hr.small {
   font-size: 24px;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
-  src: url('/assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
+  src: url('/assets/fonts/Lato/Lato-Regular.ttf'), url('/assets/fonts/Lato/Lato-Bold.ttf'), url('/assets/fonts/Lato/Lato-Black.ttf'), url('/assets/fonts/Lato/Lato-Light.ttf');
   font-weight: 300;
   margin: 10px 0 0;
 }
@@ -8410,8 +8432,8 @@ hr.small {
   display: block;
 }
 .intro-header .post-heading .subheading {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
-  src: url('/assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
+  src: url('/assets/fonts/Lato/Lato-Regular.ttf'), url('/assets/fonts/Lato/Lato-Bold.ttf'), url('/assets/fonts/Lato/Lato-Black.ttf'), url('/assets/fonts/Lato/Lato-Light.ttf');
   font-size: 24px;
   margin: 10px 0 30px;
   font-weight: 600;
@@ -8547,8 +8569,8 @@ form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eee;
 }
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
-  src: url('/assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
+  src: url('/assets/fonts/Lato/Lato-Regular.ttf'), url('/assets/fonts/Lato/Lato-Bold.ttf'), url('/assets/fonts/Lato/Lato-Black.ttf'), url('/assets/fonts/Lato/Lato-Light.ttf');
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
@@ -8572,8 +8594,8 @@ form .row:first-child .floating-label-form-group {
 }
 .pager li > a,
 .pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
-  src: url('/assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
+  src: url('/assets/fonts/Lato/Lato-Regular.ttf'), url('/assets/fonts/Lato/Lato-Bold.ttf'), url('/assets/fonts/Lato/Lato-Black.ttf'), url('/assets/fonts/Lato/Lato-Light.ttf');
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
@@ -8623,18 +8645,10 @@ body {
 }
 body {
   background: #f8f8f8 url(/assets/img/pattern.jpg);
+  border-top: 2px solid #e75967;
 }
 strong {
   font-weight: 700;
-}
-.navbar-brand {
-  font-family: 'Lobster', cursive;
-  src: url('/assets/fonts/Lobster/Lobster-Regular.ttf');
-  font-size: 35px;
-}
-.navbar-brand span {
-  color: #e75967;
-  font-family: sans-serif;
 }
 .intro-header .post-heading .meta a,
 article a {

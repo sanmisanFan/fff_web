@@ -14,6 +14,7 @@
 
   {{-- Styles --}}
   <link href="/assets/css/mainsite.css" rel="stylesheet">
+  {{--<link rel="stylesheet" href="http://fonts.useso.com/css?family=Lobster">--}}
   @yield('styles')
 
   {{-- HTML5 Shim and Respond.js for IE8 support --}}
