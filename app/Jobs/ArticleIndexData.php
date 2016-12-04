@@ -28,6 +28,7 @@ class ArticleIndexData extends Job implements SelfHandling
     /**
      * Execute the job.
      * 如果请求参数中指定了标签，则需要根据该标签来过滤要显示的文章
+     * 如果传入标签，那么调用 tagIndexData 方法返回根据标签进行过滤的文章列表，否则调用 normalIndexData 返回正常文章列表
      *
      * @return array
      */

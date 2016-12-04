@@ -21,7 +21,7 @@ class ArticleController extends Controller
         $tag = $request->get('tag');
         $data = $this->dispatch(new ArticleIndexData($tag));
         $layout = $tag ? Tag::layout($tag) : 'mainsite.layouts.index';
-
+        //echo Carbon::now();
         return view($layout, $data);
     }
 

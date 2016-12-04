@@ -57,6 +57,7 @@ gulp.task("copyfiles", function() {
 elixir(function(mix) {
 
     // 合并 scripts
+    /*
     mix.scripts([
         'js/jquery.js',
         'js/bootstrap.js',
@@ -64,9 +65,12 @@ elixir(function(mix) {
         ],
         'public/assets/js/mainsite.js','resources//assets'
     );
-    
+    */
     //后端资源复制到public的admin路径
-    mix.copy('resources/assets/backend', 'public/admin/assets/backend');
+    //mix.copy('resources/assets/backend', 'public/admin/assets/backend');
+
+    //
+    //mix.copy('resources/assets/img', 'public/assets/img');
 
     // Compile CSS
     mix.less('mainsite.less', 'public/assets/css/mainsite.css');
