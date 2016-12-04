@@ -8265,7 +8265,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085A1;
+  color: #e75967;
 }
 a img:hover,
 a img:focus {
@@ -8291,34 +8291,34 @@ hr.small {
   src: url('/assets/fonts/Open_Sans/OpenSans-Regular.ttf');
 }
 .navbar-custom .navbar-brand {
-  font-weight: 800;
+  font-weight: 900;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 1px;
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: transparent;
+    background: #f8f8f8;
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: white;
+    color: #555;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #e75967;
   }
   .navbar-custom .nav li a {
-    color: white;
+    color: #555;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #e75967;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -8337,18 +8337,18 @@ hr.small {
     transition: transform 0.3s;
   }
   .navbar-custom.is-fixed .navbar-brand {
-    color: #404040;
+    color: #555;
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085A1;
+    color: #e75967;
   }
   .navbar-custom.is-fixed .nav li a {
-    color: #404040;
+    color: #555;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085A1;
+    color: #e75967;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -8440,7 +8440,7 @@ hr.small {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085A1;
+  color: #e75967;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -8464,7 +8464,7 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085A1;
+  color: #e75967;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -8541,7 +8541,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085A1;
+  color: #e75967;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eee;
@@ -8563,8 +8563,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085A1;
-  border: 1px solid #0085A1;
+  background-color: #e75967;
+  border: 1px solid #e75967;
   color: white;
 }
 .pager {
@@ -8585,8 +8585,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085A1;
-  border: 1px solid #0085A1;
+  background-color: #e75967;
+  border: 1px solid #e75967;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -8599,12 +8599,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085A1;
+  background: #e75967;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085A1;
+  background: #e75967;
 }
 img::-moz-selection {
   color: white;
@@ -8619,7 +8619,22 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0085A1;
+  webkit-tap-highlight-color: #e75967;
+}
+body {
+  background: #f8f8f8 url(/assets/img/pattern.jpg);
+}
+strong {
+  font-weight: 700;
+}
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  src: url('/assets/fonts/Lobster/Lobster-Regular.ttf');
+  font-size: 35px;
+}
+.navbar-brand span {
+  color: #e75967;
+  font-family: sans-serif;
 }
 .intro-header .post-heading .meta a,
 article a {

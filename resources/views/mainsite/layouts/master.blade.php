@@ -10,7 +10,7 @@
 
   <title>{{ $title or config('website.title') }}</title>
   <!-- Favicon and touch icons -->
-  <link rel="shortcut icon" href="assets/ico/bitbug_favicon.ico">
+  <link rel="shortcut icon" href="bitbug_favicon.ico">
 
   {{-- Styles --}}
   <link href="/assets/css/mainsite.css" rel="stylesheet">

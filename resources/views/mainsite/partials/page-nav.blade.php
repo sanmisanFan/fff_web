@@ -10,7 +10,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">{{ config('website.name') }}</a>
+      {{--<div class="col-sm-4 logo">
+        <h1><a href="/">{{ config('website.name') }}</a> <span>.</span></h1>
+      </div> --}}
+      <a class="navbar-brand" href="/">{{ config('website.name') }} <span>.</span></a>
     </div>
 
     {{-- Collect the nav links, forms, and other content for toggling --}}

@@ -118,7 +118,7 @@ class Post extends Model
 
     /**
     * Return URL to post
-    * blog.layouts.index 视图会使用 url() 方法链接到指定文章详情页
+    * mainsite.layouts.index 视图会使用 url() 方法链接到指定文章详情页
     *
     * @param Tag $tag
     * @return string
