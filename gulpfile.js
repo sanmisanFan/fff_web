@@ -23,10 +23,6 @@ gulp.task("copyfiles", function() {
     gulp.src("resources/assets/bower_components/**")
         .pipe(gulp.dest("public/assets/vendor"));
 
-    // Copy clean-blog less files
-   /* gulp.src("resources/assets/bower_components/clean-blog/less/**")
-        .pipe(gulp.dest("resources/assets/less/clean-blog")); */
-
     //Copy jQuery 
     gulp.src("resources/assets/bower_components/jquery/dist/jquery.js")
         .pipe(gulp.dest("resources/assets/js/"));
@@ -48,6 +44,12 @@ gulp.task("copyfiles", function() {
     gulp.src("resources/assets/bower_components/fontawesome/fonts/**")
         .pipe(gulp.dest("public/assets/fonts"));
 
+    //Copy unslider
+    gulp.src("resources/assets/bower_components/unslider/dist/js/unslider-min.js")
+        .pipe(gulp.dest("resources/assets/js/"));
+    gulp.src("resources/assets/bower_components/unslider/dist/css/**")
+        .pipe(gulp.dest("public/assets/css"));
+
 });
 
 
@@ -57,15 +59,19 @@ gulp.task("copyfiles", function() {
 elixir(function(mix) {
 
     // 合并 scripts
-    /*
     mix.scripts([
         'js/jquery.js',
         'js/bootstrap.js',
-        'js/mainsite.js'
+        //'js/jquery.backstretch.min.js',
+        'js/unslider-min.js'
         ],
-        'public/assets/js/mainsite.js','resources//assets'
+        'public/assets/js/components.js','resources/assets'
     );
-    */
+
+    mix.copy('resources/assets/js/mainsite.js', 'public/assets/js');
+    mix.copy('resources/assets/js/homepage.js', 'public/assets/js')
+    
+    
     //后端资源复制到public的admin路径
     //mix.copy('resources/assets/backend', 'public/admin/assets/backend');
 

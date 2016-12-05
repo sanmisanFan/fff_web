@@ -32,6 +32,7 @@
 @include('mainsite.partials.page-footer')
 
 {{-- Scripts --}}
+<script src="/assets/js/components.js"></script>
 <script src="/assets/js/mainsite.js"></script>
 @yield('scripts')
 

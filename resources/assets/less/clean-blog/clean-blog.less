@@ -59,13 +59,12 @@ hr.small {
 // Navigation
 
 .navbar-custom {
-	border-top: 2px solid @hentai-pink;
+	//border-top: 2px solid @hentai-pink;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 3;
-	background: #f8f8f8 url(/assets/img/pattern.jpg);
 	.sans-serif;
 	.navbar-brand {
 		font-weight: 400;
@@ -76,7 +75,7 @@ hr.small {
 	.navbar-brand span {
 		font-size: 40px;
 		font-weight: 700;
-    	color: @hentai-pink;
+    	//color: @hentai-pink;
     	font-family: 'Lato';
 	}
 	.nav {
@@ -90,24 +89,24 @@ hr.small {
 		}
 	}
 	@media only screen and (min-width: 768px) {
-		
+		background: transparent;
 		border-bottom: 1px solid transparent;
 		.navbar-brand {
-			color: @logo-color;
+			color: white;
 			padding: 20px;
 			&:hover,
 			&:focus {
-				color: @hentai-pink;
+				color: @white-faded;
 			}
 		}
 		.nav {
 			li {
 				a {
-					color: @logo-color;
+					color: white;
 					padding: 20px;
 					&:hover,
 					&:focus {
-						color: @hentai-pink;
+						color: @white-faded;
 					}
 				}
 			}
@@ -130,26 +129,26 @@ hr.small {
 			/* when the user scrolls down, we hide the header right above the viewport */
 			position: fixed;
 			top: -63px;
-			background: #f8f8f8;
+			//background: #f8f8f8;
 			background-color: fade(white, 90%);
 			border-bottom: 1px solid darken(white, 5%);
 			-webkit-transition: -webkit-transform 0.3s;
 			-moz-transition: -moz-transform 0.3s;
 			transition: transform 0.3s;
 			.navbar-brand {
-				color: @logo-color;
+				color: @gray-dark;
 				&:hover,
 				&:focus {
-					color: @hentai-pink;
+					color: @brand-primary;
 				}
 			}
 			.nav {
 				li {
 					a {
-						color: @logo-color;
+						color: @gray-dark;
 						&:hover,
 						&:focus {
-							color: @hentai-pink;
+							color: @brand-primary;
 						}
 					}
 				}
