@@ -17,6 +17,122 @@ body {
 
 strong { font-weight: 700; }
 
+// Navigation
+.navbar-mainsite {
+    border-top: 2px solid @hentai-pink;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background: #f8f8f8 url(/assets/img/pattern.jpg);
+    .sans-serif;
+    .navbar-brand {
+        font-weight: 400;
+        //.lobster;
+        font-family: 'Lobster', cursive;
+        font-size: 38px;
+    }
+    .navbar-brand span {
+        font-size: 40px;
+        font-weight: 700;
+        color: @hentai-pink;
+        font-family: 'Lato';
+    }
+    .nav {
+        li {
+            a {
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 800;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        
+        border-bottom: 1px solid transparent;
+        .navbar-brand {
+            color: @logo-color;
+            padding: 20px;
+            &:hover,
+            &:focus {
+                color: @hentai-pink;
+            }
+        }
+        .nav {
+            li {
+                a {
+                    color: @logo-color;
+                    padding: 20px;
+                    &:hover,
+                    &:focus {
+                        color: @hentai-pink;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 1170px) {
+        
+        -webkit-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+        transition: background-color 0.3s;
+        /* Force Hardware Acceleration in WebKit */
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        &.is-fixed {
+            /* when the user scrolls down, we hide the header right above the viewport */
+            position: fixed;
+            top: -63px;
+            background: #f8f8f8;
+            background-color: fade(white, 90%);
+            border-bottom: 1px solid darken(white, 5%);
+            -webkit-transition: -webkit-transform 0.3s;
+            -moz-transition: -moz-transform 0.3s;
+            transition: transform 0.3s;
+            .navbar-brand {
+                color: @logo-color;
+                &:hover,
+                &:focus {
+                    color: @hentai-pink;
+                }
+            }
+            .nav {
+                li {
+                    a {
+                        color: @logo-color;
+                        &:hover,
+                        &:focus {
+                            color: @hentai-pink;
+                        }
+                    }
+                }
+            }
+        }
+        &.is-visible {
+
+            /* if the user changes the scrolling direction, we show the header */
+            -webkit-transform: translate3d(0, 100%, 0);
+            -moz-transform: translate3d(0, 100%, 0);
+            -ms-transform: translate3d(0, 100%, 0);
+            -o-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+    }
+}
+
+.my-slider{ 
+     // NOTE: Background images are set within the HTML using inline CSS!
+    margin-top:58px;
+}
+
 
 .intro-header .post-heading .meta a, article a {
     text-decoration: underline;

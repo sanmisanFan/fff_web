@@ -8294,13 +8294,11 @@ hr.small {
   border-color: white;
 }
 .navbar-custom {
-  border-top: 2px solid #e75967;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 3;
-  background: #f8f8f8 url(/assets/img/pattern.jpg);
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
   src: url('/assets/fonts/Lato/Lato-Regular.ttf'), url('/assets/fonts/Lato/Lato-Bold.ttf'), url('/assets/fonts/Lato/Lato-Black.ttf'), url('/assets/fonts/Lato/Lato-Light.ttf');
 }
@@ -8312,7 +8310,6 @@ hr.small {
 .navbar-custom .navbar-brand span {
   font-size: 40px;
   font-weight: 700;
-  color: #e75967;
   font-family: 'Lato';
 }
 .navbar-custom .nav li a {
@@ -8323,23 +8320,24 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
+    background: transparent;
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: #555;
+    color: white;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: #e75967;
+    color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    color: #555;
+    color: white;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: #e75967;
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -8353,24 +8351,23 @@ hr.small {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -63px;
-    background: #f8f8f8;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #f2f2f2;
     transition: transform 0.3s;
   }
   .navbar-custom.is-fixed .navbar-brand {
-    color: #555;
+    color: #404040;
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #e75967;
+    color: #0085A1;
   }
   .navbar-custom.is-fixed .nav li a {
-    color: #555;
+    color: #404040;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #e75967;
+    color: #0085A1;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -8649,6 +8646,94 @@ body {
 }
 strong {
   font-weight: 700;
+}
+.navbar-mainsite {
+  border-top: 2px solid #e75967;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background: #f8f8f8 url(/assets/img/pattern.jpg);
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
+  src: url('/assets/fonts/Lato/Lato-Regular.ttf'), url('/assets/fonts/Lato/Lato-Bold.ttf'), url('/assets/fonts/Lato/Lato-Black.ttf'), url('/assets/fonts/Lato/Lato-Light.ttf');
+}
+.navbar-mainsite .navbar-brand {
+  font-weight: 400;
+  font-family: 'Lobster', cursive;
+  font-size: 38px;
+}
+.navbar-mainsite .navbar-brand span {
+  font-size: 40px;
+  font-weight: 700;
+  color: #e75967;
+  font-family: 'Lato';
+}
+.navbar-mainsite .nav li a {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 768px) {
+  .navbar-mainsite {
+    border-bottom: 1px solid transparent;
+  }
+  .navbar-mainsite .navbar-brand {
+    color: #555;
+    padding: 20px;
+  }
+  .navbar-mainsite .navbar-brand:hover,
+  .navbar-mainsite .navbar-brand:focus {
+    color: #e75967;
+  }
+  .navbar-mainsite .nav li a {
+    color: #555;
+    padding: 20px;
+  }
+  .navbar-mainsite .nav li a:hover,
+  .navbar-mainsite .nav li a:focus {
+    color: #e75967;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .navbar-mainsite {
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+  .navbar-mainsite.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -63px;
+    background: #f8f8f8;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #f2f2f2;
+    transition: transform 0.3s;
+  }
+  .navbar-mainsite.is-fixed .navbar-brand {
+    color: #555;
+  }
+  .navbar-mainsite.is-fixed .navbar-brand:hover,
+  .navbar-mainsite.is-fixed .navbar-brand:focus {
+    color: #e75967;
+  }
+  .navbar-mainsite.is-fixed .nav li a {
+    color: #555;
+  }
+  .navbar-mainsite.is-fixed .nav li a:hover,
+  .navbar-mainsite.is-fixed .nav li a:focus {
+    color: #e75967;
+  }
+  .navbar-mainsite.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    transform: translate3d(0, 100%, 0);
+  }
+}
+.my-slider {
+  margin-top: 58px;
 }
 .intro-header .post-heading .meta a,
 article a {
