@@ -34,16 +34,6 @@
 {{-- Scripts --}}
 <script src="/assets/js/components.js"></script>
 <script src="/assets/js/homepage.js"></script>
-<script>
-  /*
-        Background slideshow
-    */
-    /*$('.intro-header').backstretch([
-      "assets/img/bg1.jpg"
-    , "assets/img/bg2.jpg"
-    , "assets/img/bg3.jpg"
-    ], {duration: 3000, fade: 750});*/
-</script>
 @yield('scripts')
 
 </body>
