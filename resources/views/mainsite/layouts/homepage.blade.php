@@ -6,26 +6,37 @@
 @stop
 
 @section('page-header')
-  {{--<header class="intro-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <div class="site-heading">
-            <h1>{{ $title }}</h1>
-            <hr class="small">
-            <h2 class="subheading">{{ $subtitle }}</h2>
+  
+<header class="banner">
+      <ul>
+        <li style="background-image: url('/assets/img/bg1.jpg');">
+          <div class="inner">
+            <h1>Banner幻灯片测试</h1>
+            <p>随便写点什么看看效果。</p>
+
+            <a class="btn" href="#download">下载</a>
           </div>
-        </div>
-      </div>
-    </div>
-  </header>--}}
-<header class="my-slider">
-  <ul>
-    <li>my slide</li>
-    <li>another slide</li>
-    <li>My last slide</li>
-  </ul>
-</header>
+        </li>
+
+        <li style="background-image: url('/assets/img/bg2.jpg');">
+          <div class="inner">
+            <h1>Test for Latin</h1>
+            <p>Why I am cooking sooo gooood?</p>
+
+            <a class="btn" href="#download">下载</a>
+          </div>
+        </li>
+
+        <li style="background-image: url('/assets/img/bg3.jpg');">
+          <div class="inner">
+            <h1>喵喵喵？？？</h1>
+            <p>当家的炸酱面～</p>
+
+            <a class="btn" href="//github.com/idiot/unslider">参与</a>
+          </div>
+        </li>
+      </ul>
+    </header>
 @stop
 
 @section('content')

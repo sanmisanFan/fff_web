@@ -29,7 +29,13 @@ jQuery(document).ready(function($) {
         });
     }
 
-    $('.my-slider').unslider();
+    $('.banner').unslider({
+        autoplay: false,
+        speed: 750,
+        delay: 3000,
+        nav: true,
+        arrows: false
+    });
 
     // Initialize tooltips
     $('[data-toggle="tooltip"]').tooltip();
