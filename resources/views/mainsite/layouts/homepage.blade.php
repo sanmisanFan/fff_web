@@ -1,13 +1,12 @@
 @extends('mainsite.layouts.homelayout')
 
 @section('styles')
-<link href="/assets/css/unslider.css" rel="stylesheet">
-<link href="/assets/css/unslider-dots.css" rel="stylesheet">
+<link href="/assets/css/swiper.min.css" rel="stylesheet">
 @stop
 
 @section('page-header')
   
-<header class="banner">
+{{--<header class="banner">
       <ul>
         <li style="background-image: url('/assets/img/bg1.jpg');">
           <div class="inner">
@@ -36,7 +35,47 @@
           </div>
         </li>
       </ul>
-    </header>
+    </header>--}}
+
+<!-- focus images -->
+<header class="focusImgs">
+  <a class="focusImgs_prev" id="j_homeslide_prev" href="javascript:;">
+    <span class="fa fa-angle-left"></span>
+  </a>
+  <a class="focusImgs_next" id="j_homeslide_next" href="javascript:;">
+    <span class="fa fa-angle-right"></span>
+  </a>
+  <div class="swiper-container" id="j_homeslide">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="http://www.g-cores.com/volumes/21452">
+            <img class="hidden-xs" data-no-retina="" src="http://alioss.g-cores.com/uploads/focus_image/ab216532-bad1-45ec-b796-a68f49ee3260.jpg" alt="Ab216532 bad1 45ec b796 a68f49ee3260" />
+            <img class="visible-xs-inline-block" data-no-retina="" src="http://alioss.g-cores.com/uploads/focus_image/695d1939-ca4c-4599-953c-2902fa340d0d.jpg" alt="695d1939 ca4c 4599 953c 2902fa340d0d" />
+</a>        </div>
+        <div class="swiper-slide">
+          <a href="http://www.g-cores.com/volumes/21442">
+            <img class="hidden-xs" data-no-retina="" src="http://alioss.g-cores.com/uploads/focus_image/78b7be38-e0fd-4bcb-ab2b-98630426cfe5.jpg" alt="78b7be38 e0fd 4bcb ab2b 98630426cfe5" />
+            <img class="visible-xs-inline-block" data-no-retina="" src="http://alioss.g-cores.com/uploads/focus_image/41946641-714e-454e-9569-4a2ebc42a0f4.jpg" alt="41946641 714e 454e 9569 4a2ebc42a0f4" />
+</a>        </div>
+        <div class="swiper-slide">
+          <a href="http://www.g-cores.com/volumes/21391">
+            <img class="hidden-xs" data-no-retina="" src="http://alioss.g-cores.com/uploads/focus_image/4876a849-1a61-4dce-bd58-2be07d29ba6f.jpg" alt="4876a849 1a61 4dce bd58 2be07d29ba6f" />
+            <img class="visible-xs-inline-block" data-no-retina="" src="http://alioss.g-cores.com/uploads/focus_image/d4d7c5d7-e92a-4c5e-a0d6-e2253cc3d532.jpg" alt="D4d7c5d7 e92a 4c5e a0d6 e2253cc3d532" />
+</a>        </div>
+        <div class="swiper-slide">
+          <a href="http://www.g-cores.com/volumes/21401">
+            <img class="hidden-xs" data-no-retina="" src="http://alioss.g-cores.com/uploads/focus_image/fc24ae5c-717d-45ce-a6ea-d55137f2071e.jpg" alt="Fc24ae5c 717d 45ce a6ea d55137f2071e" />
+            <img class="visible-xs-inline-block" data-no-retina="" src="http://alioss.g-cores.com/uploads/focus_image/d9a42fe6-429d-4c34-8609-9fcd152f2ee3.jpg" alt="D9a42fe6 429d 4c34 8609 9fcd152f2ee3" />
+</a>        </div>
+        <div class="swiper-slide">
+          <a href="http://www.g-cores.com/volumes/21352">
+            <img class="hidden-xs" data-no-retina="" src="http://alioss.g-cores.com/uploads/focus_image/67420ef1-ce1c-4c4a-bf50-88bfe2c161ec.jpg" alt="67420ef1 ce1c 4c4a bf50 88bfe2c161ec" />
+            <img class="visible-xs-inline-block" data-no-retina="" src="http://alioss.g-cores.com/uploads/focus_image/115f550b-82e4-49a1-bdaf-c2be65f960e4.jpg" alt="115f550b 82e4 49a1 bdaf c2be65f960e4" />
+</a>        </div>
+    </div>
+  </div>
+  <div id="j_homeslideindex" class="focusImgs_index"></div>
+</header>
 @stop
 
 @section('content')
