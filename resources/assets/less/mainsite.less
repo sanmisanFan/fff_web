@@ -130,82 +130,7 @@ strong { font-weight: 700; }
     }
 }
 
-// the banner at the homepage
-.banner{
-    background-color: @gray; 
-    background: no-repeat center center; 
-    background-attachment: scroll;
-    .background-cover;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-    overflow: auto;
-    position: relative;
-    text-align: center;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    ul{
-        list-style: outside none none;
-        width: 300%;
-        li{
-            background-size: 100% 100%;
-            box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1) inset;
-            display: block;
-            float: left;
-            min-height: 350px;
-            width: 33%;
-
-        }
-    }
-    .inner{
-        padding: 160px 0 110px;
-        color: white;
-        @media only screen and (min-width: 768px) {
-            padding: 150px 0;
-        }
-
-        h1,
-        h2{
-            color: white;
-            font-size: 30px;
-        }
-        .subheading {
-            font-size: 24px;
-            line-height: 1.1;
-            display: block;
-            .sans-serif;
-            font-weight: 300;
-            margin: 10px 0 0;
-        }
-        @media only screen and (min-width: 768px) {
-            h1 {
-                font-size: 40px;
-            }
-        }
-    }
-
-    .btn{
-        border: 2px solid rgba(255, 255, 255, 0.4);
-        border-radius: 5px;
-        clear: both;
-        color: #fff;
-        display: inline-block;
-        font-size: 12px;
-        font-weight: bold;
-        margin: 25px 0 0;
-        padding: 9px 22px 7px;
-        text-decoration: none;
-        text-transform: uppercase;
-        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-        &:hover{
-            background: rgba(255, 255, 255, 0.05) none repeat scroll 0 0;
-        }
-        &:active{
-            filter: drop-shadow(0px -1px 2px rgba(0, 0, 0, 0.5));
-        }
-    }
-}
-//end of the banner
-//
-//
+//Banner slider
 .focusImgs {
     background: #222 none repeat scroll 0 0;
     margin-bottom: 23px;
@@ -230,6 +155,7 @@ strong { font-weight: 700; }
     height: 420px;
     max-height: 100%;
     width: auto;
+    cursor: pointer;
 }
 .focusImgs .focusImgs_prev, .focusImgs .focusImgs_next {
     bottom: 0;
@@ -302,7 +228,7 @@ strong { font-weight: 700; }
     background: #fff none repeat scroll 0 0;
     border: 1px solid #fff;
 }
-///////////
+//banner slider end
 
 
 .intro-header .post-heading .meta a, article a {

@@ -29,28 +29,21 @@ jQuery(document).ready(function($) {
         });
     }
 
-    /*$('.banner').unslider({
-        autoplay: false,
-        speed: 750,
-        delay: 3000,
-        nav: true,
-        arrows: false
-    });*/
-
     var mySwiper = new Swiper ('.swiper-container', {
-    //direction: 'vertical',
-    loop: true,
+        //direction: 'vertical',
+        loop: true,
+        //autoplay: 3000,
     
-    // 如果需要分页器
-    //pagination: '.focusImgs_index',
+        // 如果需要分页器
+        //pagination: '.swiper-pagination',
     
-    // 如果需要前进后退按钮
-    nextButton: '.focusImgs_next',
-    prevButton: '.focusImgs_prev',
+        // 如果需要前进后退按钮
+        nextButton: '.focusImgs_next',
+        prevButton: '.focusImgs_prev',
     
-    // 如果需要滚动条
-    //scrollbar: '.swiper-scrollbar',
-  })   
+        // 如果需要滚动条
+        //scrollbar: '.swiper-scrollbar',
+    })   
 
     // Initialize tooltips
     $('[data-toggle="tooltip"]').tooltip();
