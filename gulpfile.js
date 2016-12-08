@@ -44,10 +44,11 @@ gulp.task("copyfiles", function() {
     gulp.src("resources/assets/bower_components/fontawesome/fonts/**")
         .pipe(gulp.dest("public/assets/fonts"));
 
-    //Copy unslider
-    gulp.src("resources/assets/bower_components/unslider/dist/js/unslider-min.js")
+
+    //Copy swiper
+    gulp.src("resources/assets/bower_components/swiper/dist/js/swiper.jquery.min.js")
         .pipe(gulp.dest("resources/assets/js/"));
-    gulp.src("resources/assets/bower_components/unslider/dist/css/**")
+    gulp.src("resources/assets/bower_components/swiper/dist/css/swiper.min.css")
         .pipe(gulp.dest("public/assets/css"));
 
 });
@@ -62,8 +63,9 @@ elixir(function(mix) {
     mix.scripts([
         'js/jquery.js',
         'js/bootstrap.js',
+        'js/swiper.jquery.min.js'
         //'js/jquery.backstretch.min.js',
-        'js/unslider-min.js'
+        
         ],
         'public/assets/js/components.js','resources/assets'
     );
