@@ -44,7 +44,6 @@ gulp.task("copyfiles", function() {
     gulp.src("resources/assets/bower_components/fontawesome/fonts/**")
         .pipe(gulp.dest("public/assets/fonts"));
 
-
     //Copy swiper
     gulp.src("resources/assets/bower_components/swiper/dist/js/swiper.jquery.min.js")
         .pipe(gulp.dest("resources/assets/js/"));

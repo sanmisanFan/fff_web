@@ -8731,79 +8731,6 @@ strong {
     transform: translate3d(0, 100%, 0);
   }
 }
-.banner {
-  background-color: #808080;
-  background: no-repeat center center;
-  background-attachment: scroll;
-  background-size: cover;
-  -o-background-size: cover;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  overflow: auto;
-  position: relative;
-  text-align: center;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3);
-  width: 100%;
-}
-.banner ul {
-  list-style: outside none none;
-  width: 300%;
-}
-.banner ul li {
-  background-size: 100% 100%;
-  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1) inset;
-  display: block;
-  float: left;
-  min-height: 350px;
-  width: 33%;
-}
-.banner .inner {
-  padding: 160px 0 110px;
-  color: white;
-}
-@media only screen and (min-width: 768px) {
-  .banner .inner {
-    padding: 150px 0;
-  }
-}
-.banner .inner h1,
-.banner .inner h2 {
-  color: white;
-  font-size: 30px;
-}
-.banner .inner .subheading {
-  font-size: 24px;
-  line-height: 1.1;
-  display: block;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑";
-  src: url('/assets/fonts/Lato/Lato-Regular.ttf'), url('/assets/fonts/Lato/Lato-Bold.ttf'), url('/assets/fonts/Lato/Lato-Black.ttf'), url('/assets/fonts/Lato/Lato-Light.ttf');
-  font-weight: 300;
-  margin: 10px 0 0;
-}
-@media only screen and (min-width: 768px) {
-  .banner .inner h1 {
-    font-size: 40px;
-  }
-}
-.banner .btn {
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 5px;
-  clear: both;
-  color: #fff;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: bold;
-  margin: 25px 0 0;
-  padding: 9px 22px 7px;
-  text-decoration: none;
-  text-transform: uppercase;
-  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-}
-.banner .btn:hover {
-  background: rgba(255, 255, 255, 0.05) none repeat scroll 0 0;
-}
-.banner .btn:active {
-  filter: drop-shadow(0px -1px 2px rgba(0, 0, 0, 0.5));
-}
 .focusImgs {
   background: #222 none repeat scroll 0 0;
   margin-bottom: 23px;
@@ -8828,6 +8755,7 @@ strong {
   height: 420px;
   max-height: 100%;
   width: auto;
+  cursor: pointer;
 }
 .focusImgs .focusImgs_prev,
 .focusImgs .focusImgs_next {
