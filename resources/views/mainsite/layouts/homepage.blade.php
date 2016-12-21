@@ -29,6 +29,13 @@
           <img class="visible-xs-inline-block" src="/assets/img/guodong_small.jpg" />
         </a>
       </div>
+
+      <div class="swiper-slide">
+        <a href="">
+          <img class="hidden-xs" src="/assets/img/xmas.jpg" />
+          <img class="visible-xs-inline-block" src="/assets/img/xmas.jpg" />
+        </a>
+      </div>
     </div>
   </div>
   {{--<div id="j_homeslideindex" class="focusImgs_index"></div>--}}
